@@ -1,17 +1,16 @@
-# serenity-js-poc
+# Serenity-js-poc
 This project is a PoC to start automating APIs using Serenity JS.
 
 ## Technology Used
-javascript, typescript,Serenity JS, Cucumber Js, RestAssured.
+Javascript, Typescript, Serenity JS, Cucumber Js, RestAssured.
 
 ## Installation
 Once you have the project cloned, use your computer's terminal to run the following command in the directory where you cloned the project:
 `npm ci`
 Running npm ci downloads the Node modules this project depends on, as well as the Serenity BDD CLI reporter jar.
 
-## Test execution
+## Test Execution
 `npm run clean`           # removes reports from any previous test run
-
 `npm test`                # executes the example test suite
 
 
@@ -23,4 +22,7 @@ Running npm ci downloads the Node modules this project depends on, as well as th
 5. Push the branch (`git push origin my-new-feature`)
 6. Create a new pull request
 
-## Information sources
+## Information Sources
+ [Serenity/JS Website](https://serenity-js.org/)
+ [Serenity/JS Tutorial](https://serenity-js.org/handbook/thinking-in-serenity-js/index.html)
+ [Serenity/JS API Docs](https://serenity-js.org/modules/))
