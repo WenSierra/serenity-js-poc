@@ -2,7 +2,7 @@ import { Before, BeforeAll, defineParameterType } from '@cucumber/cucumber';
 import { actorCalled, actorInTheSpotlight, configure, engage } from '@serenity-js/core';
 import path from 'path';
 
-import { Actors } from '../../src/pokeapi/Actors';
+import { Actors } from '../../src/typicode/Actors';
 
 /**
  * @desc

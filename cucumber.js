@@ -4,6 +4,6 @@ module.exports = {
         --require=features/**/*.ts
         --require-module=ts-node/register
         --format=@serenity-js/cucumber
-        --world-parameters={"baseApiUrl":"https://pokeapi.co"}
+        --world-parameters={"baseApiUrl":"https://jsonplaceholder.typicode.com"}
     `,
 }

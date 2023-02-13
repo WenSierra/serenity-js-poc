@@ -1,8 +1,11 @@
+import { DataTable } from "@cucumber/cucumber";
 import { Task } from "@serenity-js/core"
 import { GetRequest, Send } from "@serenity-js/rest"
 
-export const GetAbilitiesPokemon ={
-    ofASingleExpression: (): Task =>
+export const GetsPosts ={
+    with: (): Task =>
         Task.where(`#actor requests evaluation of `,
-            Send.a(GetRequest.to("/api/v2/pokemon/ditto"))
+        Send.a(GetRequest.to("/posts")),
     )};
+
+    
