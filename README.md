@@ -10,8 +10,9 @@ Once you have the project cloned, use your computer's terminal to run the follow
 Running npm ci downloads the Node modules this project depends on, as well as the Serenity BDD CLI reporter jar.
 
 ## Test execution
-npm run clean           # removes reports from any previous test run
-npm test                # executes the example test suite
+`npm run clean`           # removes reports from any previous test run
+
+`npm test`                # executes the example test suite
 
 
 ## Contributing
