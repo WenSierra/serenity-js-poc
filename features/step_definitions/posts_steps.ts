@@ -3,6 +3,7 @@ import { Ensure, equals} from "@serenity-js/assertions";
 import { Actor } from "@serenity-js/core";
 import { LastResponse } from "@serenity-js/rest";
 import { CreatePost} from '../../src/typicode/tasks/CreatePost';
+import { DeletePost } from "../../src/typicode/tasks/DeletePost";
 import { GetsPosts} from '../../src/typicode/tasks/GetsPosts';
 
 
@@ -17,10 +18,19 @@ Then('he validates that it was created correctly', () =>
 When('{actor} wants to consult the posts',  (actor: Actor)  =>
     actor.attemptsTo(GetsPosts.with())
 
-    );
+);
 
 Then('he validates that it was consulted correctly',  ()  =>
     Ensure.that(LastResponse.status(), equals(200))
+);
+
+When('{actor} wants to delate his post',  (actor: Actor)  =>
+    actor.attemptsTo(DeletePost.with())
+
+);
+
+Then('he validates that it has been correctly deleted', () =>
+    Ensure.that(LastResponse.body(), equals({}))
 );
 
 
