@@ -1,4 +1,3 @@
-import { DataTable } from "@cucumber/cucumber";
 import { Task } from "@serenity-js/core"
 import { GetRequest, Send } from "@serenity-js/rest"
 
@@ -7,5 +6,3 @@ export const GetsPosts ={
         Task.where(`#actor requests evaluation of `,
         Send.a(GetRequest.to("/posts")),
     )};
-
-    

@@ -10,3 +10,7 @@ Scenario: Create a new post in typicode
 Scenario: Consult all post in typicode 
      When James wants to consult the posts
      Then he validates that it was consulted correctly
+
+Scenario: Delete post created 
+     When James wants to delate his post
+     Then he validates that it has been correctly deleted    
